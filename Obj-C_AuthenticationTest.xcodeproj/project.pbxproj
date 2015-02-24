@@ -14,6 +14,7 @@
 		FD30C3DD1A9C56F7000941F9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD30C3DC1A9C56F7000941F9 /* Images.xcassets */; };
 		FD30C3E01A9C56F7000941F9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD30C3DE1A9C56F7000941F9 /* LaunchScreen.xib */; };
 		FD30C3EC1A9C56F7000941F9 /* Obj_C_AuthenticationTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD30C3EB1A9C56F7000941F9 /* Obj_C_AuthenticationTestTests.m */; };
+		FD30C3F61A9C5E92000941F9 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD30C3F51A9C5E92000941F9 /* LocalAuthentication.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		FD30C3E51A9C56F7000941F9 /* Obj-C_AuthenticationTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Obj-C_AuthenticationTestTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD30C3EA1A9C56F7000941F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD30C3EB1A9C56F7000941F9 /* Obj_C_AuthenticationTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Obj_C_AuthenticationTestTests.m; sourceTree = "<group>"; };
+		FD30C3F51A9C5E92000941F9 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD30C3F61A9C5E92000941F9 /* LocalAuthentication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +66,7 @@
 		FD30C3C31A9C56F7000941F9 = {
 			isa = PBXGroup;
 			children = (
+				FD30C3F51A9C5E92000941F9 /* LocalAuthentication.framework */,
 				FD30C3CE1A9C56F7000941F9 /* Obj-C_AuthenticationTest */,
 				FD30C3E81A9C56F7000941F9 /* Obj-C_AuthenticationTestTests */,
 				FD30C3CD1A9C56F7000941F9 /* Products */,
@@ -348,8 +352,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Obj-C_AuthenticationTest/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -358,8 +364,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Obj-C_AuthenticationTest/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -416,6 +424,7 @@
 				FD30C3F11A9C56F7000941F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FD30C3F21A9C56F7000941F9 /* Build configuration list for PBXNativeTarget "Obj-C_AuthenticationTestTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +433,7 @@
 				FD30C3F41A9C56F7000941F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
