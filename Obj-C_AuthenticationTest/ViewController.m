@@ -116,6 +116,8 @@
         
         // 最初に薄く表示されてるやつ
         textField.placeholder = @"Your Password";
+        // 入力文字を隠す
+        [textField setSecureTextEntry:YES];
         
     }];
     
